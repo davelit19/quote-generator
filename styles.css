@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Blue);
+    
+}
+.advice-box {
+    width: 40vw;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 40px 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.advice-head {
+   color: var(--Neon-Green);
+   margin-bottom: 30px;
+   letter-spacing: 0.2em;
+   font-size: 0.7em;
+}
+.advice-text {
+   font-size: 1.3em;
+   color: var(--Light-Cyan);
+   text-align: center;
+   margin-bottom: 30px;
+}
+.advice-box > img {
+    margin: 10px 0 40px;
+    width: 100%;
+}
+button {
+    background-color: var(--Neon-Green);
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: -31px;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 4px 4px 20px 0px var(--Neon-Green), -4px -4px 20px var(--Neon-Green);
+}
+@media (max-width: 750px) and (min-width: 520px){
+    .advice-box {
+        width: 70vw;
+    }
+}
+@media (max-width: 475px){
+    .advice-box {
+        width: 90vw;
+    }
+}
